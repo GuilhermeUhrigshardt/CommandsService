@@ -104,3 +104,4 @@ C:\Users\guilh\OneDrive\Documents\Microservices\IntroCourse\CommandsService\obj\
 C:\Users\guilh\OneDrive\Documents\Microservices\IntroCourse\CommandsService\obj\Debug\net8.0\CommandsService.pdb
 C:\Users\guilh\OneDrive\Documents\Microservices\IntroCourse\CommandsService\obj\Debug\net8.0\CommandsService.genruntimeconfig.cache
 C:\Users\guilh\OneDrive\Documents\Microservices\IntroCourse\CommandsService\obj\Debug\net8.0\ref\CommandsService.dll
+C:\Users\guilh\OneDrive\Documents\Microservices\IntroCourse\CommandsService\obj\Debug\net8.0\CommandsService.sourcelink.json
