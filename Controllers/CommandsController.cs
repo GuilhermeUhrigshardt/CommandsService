@@ -1,5 +1,6 @@
 using AutoMapper;
 using CommandsService.Data;
+using CommandsService.Dtos;
 using Microsoft.AspNetCore.Mvc;
 
 namespace CommandsService.Controllers
@@ -15,6 +16,21 @@ namespace CommandsService.Controllers
         {
             _repository = repository;
             _mapper = mapper;
+        }
+
+        [HttpGet]
+        public ActionResult<IEnumerable<CommandReadDto>> GetCommandsForPlatform(int platformId)
+        {
+            Console.WriteLine($"==> Hi GetCommandsForPlatform: {platformId}");
+            
+            if(!_repository.PlatformExists(platformId))
+            {
+                return NotFound();
+            }
+
+            var commands = _repository.GetCommandsForPlatform(platformId);
+
+            return Ok(_mapper.Map<IEnumerable<CommandReadDto>>(commands));
         }
     }
 }
